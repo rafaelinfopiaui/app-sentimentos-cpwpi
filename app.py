@@ -5,9 +5,9 @@ import os   # Importado para verificar a existência dos ficheiros de imagem
 
 # --- 1. Configuração da Página ---
 st.set_page_config(
-    page_title="Análise de Sentimentos CPWPI",
-    page_icon="🧠",
-    layout="wide"
+    page_title="Análise de Sentimentos CPWPI 2025",
+    page_icon="🤖",
+    layout="centered",
 )
 
 # --- FUNÇÃO SIMPLIFICADA PARA APLICAR O FUNDO ---
@@ -159,15 +159,18 @@ if st.button("Analisar Sentimento"):
             st.markdown("- **Recomendações:** Monitorizar a conversa, obter mais detalhes com pesquisa de satisfação.")
 
 # --- 4. Barra Lateral e Rodapé ---
+st.sidebar.success("Modelo de Demonstração Ativo!")
+st.sidebar.info("Este é um projeto educacional desenvolvido para fins de demonstração.")
 st.sidebar.markdown("---")
+
+
+st.sidebar.markdown("### Sobre o Projeto")
+st.sidebar.markdown(f"**Desenvolvimento:** Equipe do Projeto de Extensão do Curso de Bacharelado em Engenharia de Computação com IA do Centro Universitário Tecnológico de Teresina - UNI-CET")
 
 if os.path.exists("unicet_white.png"):
     col1, col2, col3 = st.sidebar.columns([1,2,1])
     with col2:
         st.image("unicet_white.png", width=150)
-
-st.sidebar.markdown("### Sobre o Projeto")
-st.sidebar.markdown(f"**Desenvolvimento:** Equipe de Extensão - Engenharia de Computação com IA do Centro Universitário Tecnológico de Teresina - UNI-CET")
 
 if os.path.exists("ENG-CIA logo.png"):
     col1, col2, col3 = st.sidebar.columns([1,2,1])
