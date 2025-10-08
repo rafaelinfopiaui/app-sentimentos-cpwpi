@@ -95,9 +95,9 @@ def predict_mock_sentiment(texto_input):
 # --- 4. Interface Gráfica do Streamlit ---
 
 # BANNER NO CABEÇALHO
-if os.path.exists("banner_home-CPWeekendPiaui2-1.png"):
+if os.path.exists("banner_home-CPWeekendPiaui2-2.png"):
     # CORREÇÃO APLICADA AQUI:
-    st.image("banner_home-CPWeekendPiaui2-1.png", use_container_width=True)
+    st.image("banner_home-CPWeekendPiaui2-2.png", use_container_width=True)
 
 st.title("🧠 Classificador de Sentimentos em Português")
 st.subheader("Projeto de Extensão: CP Weekend Piauí 2025")
@@ -142,7 +142,7 @@ if os.path.exists("CPWeekend_Piaui.png"):
         st.image("CPWeekend_Piaui.png", width=150)
 
 st.sidebar.markdown("### Sobre o Projeto")
-st.sidebar.markdown(f"**Desenvolvimento:** Equipa do Projeto de Extensão do Curso de Bacharelado em Engenharia de Computação com IA do Centro Universitário Tecnológico de Teresina - UNI-CET")
+st.sidebar.markdown(f"**Desenvolvimento:** Equipe do Projeto de Extensão do Curso de Bacharelado em Engenharia de Computação com IA do Centro Universitário Tecnológico de Teresina - UNI-CET")
 
 if os.path.exists("unicet_white.png"):
     col1_side, col2_side, col3_side = st.sidebar.columns([1,2,1])
